@@ -4,251 +4,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
     <style>
-        /* General Styling */
-        body {
-            background-color: #f9f9f9;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+            background-color: #f3f4f6;
+            line-height: 1.6;
         }
 
         a {
             text-decoration: none;
-            transition: color 0.3s ease;
+            color: inherit;
+            transition: all 0.3s ease;
         }
 
         a:hover {
-            color: #1d4ed8;
+            color: #2563eb;
         }
 
-        /* Navigation */
+        /* Navbar */
         nav {
             position: sticky;
             top: 0;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 1rem;
+            z-index: 1000;
+            background-color: #fff;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        nav a {
-            color: #374151;
-            font-weight: 500;
-            margin: 0 1rem;
-        }
-
-        nav a:hover {
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
             color: #2563eb;
-            text-decoration: underline;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid #2563eb;
         }
 
         /* Hero Section */
-        #home {
+        #hero {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative;
             color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1662116137244-b7c6fdc1ac35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
-                        no-repeat center/cover;
-            background-attachment: fixed;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center/cover;
         }
 
-        #home h1 {
+        #hero h1 {
             font-size: 3rem;
+            font-weight: 700;
             margin-bottom: 1rem;
         }
 
-        #home button {
-            background-color: #2563eb;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transform: scale(1);
-            transition: transform 0.3s ease, background-color 0.3s ease;
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
         }
 
-        #home button:hover {
-            transform: scale(1.1);
+        #hero .cta {
+            background-color: #2563eb;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        #hero .cta:hover {
             background-color: #1e3a8a;
         }
 
-        /* Section Headings */
-        section h2 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
             text-align: center;
         }
 
-        section {
-            padding: 3rem 1.5rem;
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        section p {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1rem;
         }
 
         /* Skills Section */
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+        #skills .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
-        .skill-card {
-            background-color: white;
-            padding: 1.5rem;
+        #skills .skill-card {
+            background-color: #fff;
+            padding: 2rem;
             border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 250px;
+            text-align: center;
         }
 
-        .skill-card:hover {
-            transform: translateY(-5px);
+        #skills .skill-card:hover {
+            transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .skill-card h3 {
-            color: #334155;
+        #skills .skill-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: #2563eb;
         }
 
-        .skill-card div {
+        #skills .skill-card span {
+            display: inline-block;
+            width: 80%;
+            height: 8px;
+            margin: 1rem auto;
             background-color: #e5e7eb;
             border-radius: 5px;
             overflow: hidden;
             position: relative;
-            height: 8px;
         }
 
-        .skill-card div span {
-            display: block;
+        #skills .skill-card span div {
+            width: 90%;
             height: 100%;
             background-color: #2563eb;
-            transition: width 0.5s ease;
+            position: absolute;
         }
 
         /* Projects Section */
-        .projects {
+        #projects .projects-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
-        .project-card {
-            background-color: white;
+        #projects .project-card {
+            background-color: #fff;
             border-radius: 8px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
-        .project-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .project-card:hover img {
+        #projects .project-card:hover {
             transform: scale(1.05);
-            opacity: 0.9;
         }
 
-        .project-card h3 {
-            color: #374151;
+        #projects .project-card img {
+            width: 100%;
+            display: block;
+        }
+
+        #projects .project-card h3 {
             padding: 1rem;
+            font-size: 1.5rem;
+            color: #2563eb;
         }
 
         /* Contact Section */
         #contact {
-            text-align: center;
+            background-color: #2563eb;
+            color: white;
         }
 
         #contact a {
             display: inline-block;
-            margin: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background-color: #2563eb;
-            color: white;
-            border-radius: 5px;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
         #contact a:hover {
-            background-color: #1e40af;
-            transform: scale(1.05);
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        footer {
+            padding: 1rem 0;
+            text-align: center;
+            background-color: #1e3a8a;
+            color: white;
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">MyPortfolio</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section id="home">
+    <section id="hero">
         <div>
-            <h1>Welcome to My Portfolio</h1>
-            <button>Learn More</button>
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#contact" class="cta">Get in Touch</a>
         </div>
     </section>
 
     <section id="skills">
         <h2>My Skills</h2>
-        <div class="skills">
+        <div class="skills-container">
             <div class="skill-card">
                 <h3>HTML</h3>
-                <div><span style="width: 90%;"></span></div>
+                <span><div style="width: 90%;"></div></span>
             </div>
             <div class="skill-card">
                 <h3>CSS</h3>
-                <div><span style="width: 80%;"></span></div>
+                <span><div style="width: 85%;"></div></span>
             </div>
             <div class="skill-card">
                 <h3>JavaScript</h3>
-                <div><span style="width: 70%;"></span></div>
+                <span><div style="width: 70%;"></div></span>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="projects">
+        <div class="projects-container">
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="Project 1">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
                 <h3>Project One</h3>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="Project 2">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
                 <h3>Project Two</h3>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x200" alt="Project 3">
-                <h3>Project Three</h3>
             </div>
         </div>
     </section>
@@ -257,5 +281,9 @@
         <h2>Contact Me</h2>
         <a href="mailto:example@email.com">Email Me</a>
     </section>
+
+    <footer>
+        &copy; 2025 MyPortfolio. All rights reserved.
+    </footer>
 </body>
 </html>
