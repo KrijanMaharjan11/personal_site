@@ -1,18 +1,28 @@
- <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="text-xl sm:text-2xl font-bold text-gray-800">Portfolio</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-white hover:text-blue-500 transition">Home</a>
-                    <a href="#about" class="text-white hover:text-blue-500 transition">About</a>
-                    <a href="#skills" class="text-white hover:text-blue-500 transition">Skills</a>
-                    <a href="#projects" class="text-white hover:text-blue-500 transition">Projects</a>
-                    <a href="#contact" class="text-white hover:text-blue-500 transition">Contact</a>
+                    <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
                 </div>
-                <!-- Mobile Menu Button -->
+                <!-- Mobile menu button -->
                 <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" id="menu-btn" aria-label="Toggle menu">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
@@ -21,14 +31,37 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative pt-20 md:pt-32 bg-[url('https://images.unsplash.com/photo-1662116137244-b7c6fdc1ac35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center text-white">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <div class="container mx-auto px-6 py-16 sm:py-20 text-center relative z-10">
-            <h1 class="text-5xl sm:text-6xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">Hi, I'm Krijan Maharjan</h1>
-            <p class="text-xl sm:text-2xl mb-8 animate__animated animate__fadeIn animate__delay-1.5s">Frontend Developer</p>
-            <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition transform hover:scale-105">Get in Touch</a>
+    <section id="home" class="pt-20 md:pt-32 bg-[url('https://images.unsplash.com/photo-1662116137244-b7c6fdc1ac35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+        <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4">Hi, I'm Krijan Maharjan</h1>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8">Frontend Developer</p>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Get in Touch</button>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="/Profile/Profile.jpg" alt="Profile" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        I'm a passionate Frontend Developer with a keen eye for creating beautiful and functional user experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks like React and TailwindCSS, I bring designs to life through clean, efficient code.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        I'm driven by the challenge of solving complex problems and continuously learning new technologies. When I'm not coding, I enjoy exploring new web technologies and contributing to open-source projects.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        My goal is to build accessible, performant websites that make a positive impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="py-12 sm:py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6">
