@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script.js"></script>
 </head>
+
 <body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-lg z-50">
@@ -21,9 +23,12 @@
                     <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
                 </div>
                 <!-- Mobile menu button -->
-                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" id="menu-btn" aria-label="Toggle menu">
+                <button
+                    class="md:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    id="menu-btn" aria-label="Toggle menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
@@ -31,50 +36,60 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-20 md:pt-32 bg-[url('https://images.unsplash.com/photo-1662116137244-b7c6fdc1ac35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+    <section id="home"
+        class="pt-20 md:pt-32 bg-[url('https://images.unsplash.com/photo-1662116137244-b7c6fdc1ac35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
         <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4">Hi, I'm Krijan Maharjan</h1>
             <p class="text-lg sm:text-xl text-gray-600 mb-8">Frontend Developer</p>
-            <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Get in Touch</button>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Get in
+                Touch</button>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <img src="/Profile/Profile.jpg" alt="Profile" class="rounded-lg shadow-lg">
-                </div>
-                <div class="md:w-1/2 md:pl-12">
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        I'm a passionate Frontend Developer with a keen eye for creating beautiful and functional user experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks like React and TailwindCSS, I bring designs to life through clean, efficient code.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        I'm driven by the challenge of solving complex problems and continuously learning new technologies. When I'm not coding, I enjoy exploring new web technologies and contributing to open-source projects.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed">
-                        My goal is to build accessible, performant websites that make a positive impact.
-                    </p>
-                </div>
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Image Section -->
+            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+<img src="./images/Profile.png" alt="Profile Picture" class="w-64 h-64 object-cover rounded-full shadow-md">
+            </div>
+            <!-- Text Section -->
+            <div class="md:w-1/2 md:pl-12">
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    I'm a passionate Frontend Developer with a keen eye for creating beautiful and functional user
+                    experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks like React and
+                    TailwindCSS, I bring designs to life through clean, efficient code.
+                </p>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    I'm driven by the challenge of solving complex problems and continuously learning new
+                    technologies. When I'm not coding, I enjoy exploring new web technologies and contributing to
+                    open-source projects.
+                </p>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    My goal is to build accessible, performant websites that make a positive impact.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="py-12 sm:py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6">
             <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">My Skills</h2>
-            
+    
             <!-- Skills Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Skill Card -->
+                <!-- HTML/CSS Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <!-- You can use FontAwesome, Hero Icons, or any other icon library -->
                         <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
                         </svg>
                         <h3 class="text-lg font-semibold mb-2">HTML/CSS</h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -83,12 +98,13 @@
                         <span class="text-sm text-gray-600 mt-2">90%</span>
                     </div>
                 </div>
-
+    
                 <!-- JavaScript Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
                         <svg class="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
                         </svg>
                         <h3 class="text-lg font-semibold mb-2">JavaScript</h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -97,12 +113,14 @@
                         <span class="text-sm text-gray-600 mt-2">85%</span>
                     </div>
                 </div>
-
+    
                 <!-- React Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
                         <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
                         </svg>
                         <h3 class="text-lg font-semibold mb-2">React</h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
@@ -111,55 +129,57 @@
                         <span class="text-sm text-gray-600 mt-2">80%</span>
                     </div>
                 </div>
-
-            
-
-                <!-- Additional Skills -->
+    
+                <!-- SQL Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-purple-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6H2v12h2m18 0h2V6h-2m-5 6h-3m3 4h-3m-4-4h-3m3 4h-3"></path>
                         </svg>
                         <h3 class="text-lg font-semibold mb-2">SQL</h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-purple-500 h-2.5 rounded-full" style="width: 70%"></div>
+                            <div class="bg-green-500 h-2.5 rounded-full" style="width: 70%"></div>
                         </div>
                         <span class="text-sm text-gray-600 mt-2">70%</span>
                     </div>
                 </div>
-
+    
                 <!-- Git Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-orange-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        <svg class="w-12 h-12 text-gray-700 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2-2 4 4m0 0l-2 2m2-2l2-2m-6-6l-4 4m4-4l-2-2m-4 4h2m-2-2h2m4 0h2m-2 2h-2m4-4v8l2 2m-6 2h2m-2 2h2">
+                            </path>
                         </svg>
                         <h3 class="text-lg font-semibold mb-2">Git</h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 85%"></div>
+                            <div class="bg-gray-700 h-2.5 rounded-full" style="width: 85%"></div>
                         </div>
                         <span class="text-sm text-gray-600 mt-2">85%</span>
                     </div>
                 </div>
-            </div>
-            
-            <!-- UI/UX Skill -->
-            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div class="flex flex-col items-center">
-                    <!-- You can use an icon library like Heroicons or FontAwesome -->
-                    <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-                    </svg>
-                    <h3 class="text-lg font-semibold mb-2">UI/UX Design</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5">
-                        <div class="bg-green-500 h-2.5 rounded-full" style="width: 75%"></div>
+    
+                <!-- UI/UX Design Skill -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex flex-col items-center">
+                        <svg class="w-12 h-12 text-pink-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v18h14V3H5zM5 3l7 5 7-5"></path>
+                        </svg>
+                        <h3 class="text-lg font-semibold mb-2">UI/UX Design</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-pink-500 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <span class="text-sm text-gray-600 mt-2">80%</span>
                     </div>
-                    <span class="text-sm text-gray-600 mt-2">75%</span>
                 </div>
             </div>
-           
         </div>
     </section>
+
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-12 sm:py-20 bg-gray-100">
@@ -168,19 +188,22 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Project Card 1 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="../images/tetris.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <img src="./images/Tetris.png" alt="Sports" class="w-full h-48 object-cover">
                     <div class="p-4 sm:p-6">
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">Tetris Game</h3>
-                        <p class="text-sm sm:text-base text-gray-600">A simple tetris game built using HTML, CSS, and JavaScript.</p>
-                        <a href="https://github.com/KrijanMaharjan11/Tetris-Game" class="inline-block mt-3 sm:mt-4 text-blue-600 hover:text-blue-800">View Project →</a>
+                        <p class="text-sm sm:text-base text-gray-600">A simple tetris game built using HTML, CSS, and
+                            JavaScript.</p>
+                        <a href="https://github.com/KrijanMaharjan11/Tetris-Game"
+                            class="inline-block mt-3 sm:mt-4 text-blue-600 hover:text-blue-800">View Project →</a>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="../images/sports.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <img src="./images/sports.png" alt="Sports" class="w-full h-48 object-cover">
                     <div class="p-4 sm:p-6">
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">Sports Website</h3>
-                        <p class="text-sm sm:text-base text-gray-600">A sports website built using HTML, CSS, and JavaScript.</p>
+                        <p class="text-sm sm:text-base text-gray-600">A sports website built using HTML, CSS, and
+                            JavaScript.</p>
                         <a href="https://github.com/KrijanMaharjan11/Sports_management"
                             class="inline-block mt-3 sm:mt-4 text-blue-600 hover:text-blue-800">View Project →</a>
                     </div>
@@ -196,32 +219,44 @@
             <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8">Let's Connect</h2>
             <div class="max-w-lg mx-auto text-center">
                 <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
-                    <svg class="w-16 h-16 mx-auto text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    <svg class="w-16 h-16 mx-auto text-blue-500 mb-4" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     <p class="text-gray-600 mb-6">Feel free to reach out to me at</p>
-                    <a href="mailto:idosabin78@gmail.com" 
-                       class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group">
+                    <a href="mailto:idosabin78@gmail.com"
+                        class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group">
                         <span class="mr-2">idosabin78@gmail.com</span>
-                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </a>
                     <div class="mt-8 flex justify-center space-x-6">
                         <!-- Social Links -->
-                        <a href="https://linkedin.com/in/yourprofile" class="text-gray-600 hover:text-blue-500 transition-colors">
+                        <a href="https://www.linkedin.com/in/krijan-maharjan-a92b9b259/"
+                            class="text-gray-600 hover:text-blue-500 transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
-                        <a href="https://github.com/yourusername" class="text-gray-600 hover:text-gray-900 transition-colors">
+                        <a href="https://github.com/KrijanMaharjan11"
+                            class="text-gray-600 hover:text-gray-900 transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
-                        <a href="https://twitter.com/yourusername" class="text-gray-600 hover:text-blue-400 transition-colors">
+                        <a href="https://www.instagram.com/krijanmaharjan/" class="text-gray-600 hover:text-pink-400 transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                <path
+                                    d="M12 2.163c3.3 0 3.693.012 4.986.072 1.304.061 2.418.253 3.295 1.13.877.877 1.07 1.991 1.131 3.295.061 1.293.072 1.686.072 4.986s-.011 3.693-.072 4.986c-.061 1.304-.253 2.418-1.13 3.295-.877.877-1.991 1.07-3.295 1.131-1.293.061-1.686.072-4.986.072s-3.693-.011-4.986-.072c-1.304-.061-2.418-.253-3.295-1.131-.877-.877-1.07-1.991-1.131-3.295-.061-1.293-.072-1.686-.072-4.986s.011-3.693.072-4.986c.061-1.304.253-2.418 1.131-3.295.877-.877 1.991-1.07 3.295-1.131 1.293-.061 1.686-.072 4.986-.072zm0-2.163c-3.348 0-3.747.012-5.064.073-1.42.061-2.617.282-3.656 1.32-.986.986-1.258 2.284-1.32 3.656-.061 1.317-.073 1.716-.073 5.064s.012 3.747.073 5.064c.061 1.372.282 2.67 1.32 3.656.986 1.038 2.236 1.259 3.656 1.32 1.317.061 1.716.073 5.064.073s3.747-.012 5.064-.073c1.42-.061 2.67-.282 3.656-1.32.986-.986 1.258-2.284 1.32-3.656.061-1.317.073-1.716.073-5.064s-.012-3.747-.073-5.064c-.061-1.372-.282-2.67-1.32-3.656-1.038-1.038-2.236-1.259-3.656-1.32-1.317-.061-1.716-.073-5.064-.073zm0 6.166a5.834 5.834 0 1 0 5.834 5.834 5.834 5.834 0 0 0-5.834-5.834zm0 9.001a3.167 3.167 0 1 1 3.167-3.167 3.167 3.167 0 0 1-3.167 3.167zm7.184-7.645c-.853 0-1.546-.693-1.546-1.546s.693-1.546 1.546-1.546 1.546.693 1.546 1.546-.693 1.546-1.546 1.546z" />
+                            </svg>
+                        </a>
+
                             </svg>
                         </a>
                     </div>
@@ -237,4 +272,5 @@
         </div>
     </footer>
 </body>
+
 </html>
