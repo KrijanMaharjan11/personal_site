@@ -11,17 +11,25 @@
 
 <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-lg z-50">
-        <div class="container mx-auto px-4 sm:px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-xl sm:text-2xl font-bold text-gray-800">Portfolio</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
-                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
-                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
-                </div>
+<nav class="fixed w-full bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 shadow-lg z-50">
+    <div class="container mx-auto px-4 sm:px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div
+                class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text">
+                Portfolio
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-700 hover:text-purple-800">Home</a>
+                <a href="#about" class="text-blue-700 hover:text-purple-800">About</a>
+                <a href="#skills" class="text-blue-700 hover:text-purple-800">Skills</a>
+                <a href="#projects" class="text-blue-700 hover:text-purple-800">Projects</a>
+                <a href="#contact" class="text-blue-700 hover:text-purple-800">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
                 <!-- Mobile menu button -->
                 <button
                     class="md:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -141,99 +149,80 @@
                 <!-- HTML/CSS Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                            </path>
-                        </svg>
+                        <!-- HTML5 Logo -->
+                        <img class="w-24 h-24 mb-4"
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                            alt="HTML/CSS logo">
                         <h3 class="text-lg font-semibold mb-2">HTML/CSS</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">90%</span>
+                        <p class="text-sm text-gray-600 mt-2">Expert in creating responsive and visually appealing web pages
+                            using HTML and CSS.</p>
                     </div>
                 </div>
     
                 <!-- JavaScript Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                        </svg>
+                        <!-- JavaScript Logo -->
+                        <img class="w-24 h-24 mb-4"
+                            src="https://static.vecteezy.com/system/resources/previews/001/416/690/non_2x/js-emblem-orange-shield-and-white-text-vector.jpg"
+                            alt="JavaScript logo">
                         <h3 class="text-lg font-semibold mb-2">JavaScript</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">85%</span>
+                        <p class="text-sm text-gray-600 mt-2">Proficient in building dynamic and interactive web
+                            applications with JavaScript.</p>
                     </div>
                 </div>
     
                 <!-- React Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-blue-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                            </path>
-                        </svg>
+                        <!-- React Logo -->
+                        <img class="w-24 h-24 mb-4" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                            alt="React logo">
                         <h3 class="text-lg font-semibold mb-2">React</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-blue-400 h-2.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">80%</span>
+                        <p class="text-sm text-gray-600 mt-2">Skilled in creating fast, efficient, and scalable applications
+                            using React.</p>
                     </div>
                 </div>
     
                 <!-- SQL Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6H2v12h2m18 0h2V6h-2m-5 6h-3m3 4h-3m-4-4h-3m3 4h-3"></path>
-                        </svg>
+                        <!-- SQL Logo -->
+                        <img class="w-24 h-24 mb-4" src="https://png.pngtree.com/thumb_back/fh260/background/20220815/pngtree-iconic-logo-design-for-sql-database-uiux-app-photo-image_25179210.jpg"
+                            alt="SQL logo">
                         <h3 class="text-lg font-semibold mb-2">SQL</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-green-500 h-2.5 rounded-full" style="width: 70%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">70%</span>
+                        <p class="text-sm text-gray-600 mt-2">Experienced in managing and querying databases using SQL.</p>
                     </div>
                 </div>
     
                 <!-- Git Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-gray-700 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2-2 4 4m0 0l-2 2m2-2l2-2m-6-6l-4 4m4-4l-2-2m-4 4h2m-2-2h2m4 0h2m-2 2h-2m4-4v8l2 2m-6 2h2m-2 2h2">
-                            </path>
-                        </svg>
-                        <h3 class="text-lg font-semibold mb-2">Git</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-gray-700 h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">85%</span>
+                        <!-- Git Logo -->
+                        <img class="w-24 h-24 mb-4"
+                            src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
+                            alt="Git logo">
+                        <h3 class="text-lg font-semibold mb-2">GitHub</h3>
+                        <p class="text-sm text-gray-600 mt-2">Proficient in using Git for version control and collaborative
+                            development.</p>
                     </div>
                 </div>
     
                 <!-- UI/UX Design Skill -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div class="flex flex-col items-center">
-                        <svg class="w-12 h-12 text-pink-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 3v18h14V3H5zM5 3l7 5 7-5"></path>
-                        </svg>
+                        <!-- Figma Logo -->
+                        <img class="w-24 h-24 mb-4"
+                            src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png"
+                            alt="UI/UX Design logo">
                         <h3 class="text-lg font-semibold mb-2">UI/UX Design</h3>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-pink-500 h-2.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                        <span class="text-sm text-gray-600 mt-2">80%</span>
+                        <p class="text-sm text-gray-600 mt-2">Experienced in designing user-friendly interfaces and seamless
+                            user experiences.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <!-- Projects Section -->
